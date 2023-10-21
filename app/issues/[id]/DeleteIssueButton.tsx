@@ -20,7 +20,7 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
     try {
       setDeleting(true);
       axios.delete("/api/issues/" + issueId);
-      router.push("/issues");
+      router.push("/issues/list");
       //necessário fazer um refresh para limpar o cache do Next
       router.refresh();
     } catch (error) {
