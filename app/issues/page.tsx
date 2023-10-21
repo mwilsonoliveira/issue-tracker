@@ -44,4 +44,8 @@ const IssuesPage = async () => {
   );
 };
 
+//Forçando o next a buildar o arquivo como dinâmico ao
+//invés de estático, o que faz a informação ser mostrada
+export const dynamic = "force-dynamic";
+
 export default IssuesPage;
