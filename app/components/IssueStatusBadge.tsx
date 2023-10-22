@@ -8,9 +8,9 @@ const statusMap: Record<
   Status,
   { label: string; color: "red" | "violet" | "green" }
 > = {
-  OPEN: { label: "Open", color: "red" },
-  IN_PROGRESS: { label: "In Progress", color: "violet" },
-  CLOSED: { label: "Closed", color: "green" },
+  OPEN: { label: "Aberta", color: "red" },
+  IN_PROGRESS: { label: "Em progresso", color: "violet" },
+  CLOSED: { label: "Fechada", color: "green" },
 };
 
 // Maneira mais bonita de receber o tipo do que criar uma interface

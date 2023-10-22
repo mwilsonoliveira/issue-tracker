@@ -4,10 +4,10 @@ import { Status } from "@prisma/client";
 import { Select } from "@radix-ui/themes";
 
 const statuses: { label: string; value?: Status }[] = [
-  { label: "Todos" },
-  { label: "Aberto", value: "OPEN" },
+  { label: "Todas" },
+  { label: "Aberta", value: "OPEN" },
   { label: "Em progresso", value: "IN_PROGRESS" },
-  { label: "Fechado", value: "CLOSED" },
+  { label: "Fechada", value: "CLOSED" },
 ];
 
 const IssueStatusFilter = () => {

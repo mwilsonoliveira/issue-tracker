@@ -19,7 +19,7 @@ function LoadingIssuesPage() {
               Status
             </Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell className="hidden md:table-cell">
-              Created
+              Criada em
             </Table.ColumnHeaderCell>
           </Table.Row>
         </Table.Header>
