@@ -29,10 +29,20 @@ const IssuesPage = async ({ searchParams }: Props) => {
     : undefined;
   //Caso esteja e só assim ele vai para o prisma, se não
   //vai filtrar por todos ou undefined.
+
+  //Ao invés de passar um parâmetro por vez
+  //dá pra usar assim com colchetes e o objeto
+  const orderBy = columns
+    .map((column) => column.value)
+    .includes(searchParams.orderBy)
+    ? { [searchParams.orderBy]: "asc" }
+    : undefined;
+
   const issues = await prisma.issue.findMany({
     where: {
       status,
     },
+    orderBy,
   });
 
   return (
