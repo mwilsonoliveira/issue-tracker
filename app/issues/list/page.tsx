@@ -2,6 +2,7 @@ import Pagination from "@/app/components/Pagination";
 import prisma from "@/prisma/client";
 import { Status } from "@prisma/client";
 import { Flex } from "@radix-ui/themes";
+import { Metadata } from "next";
 import IssueActions from "./IssueActions";
 import IssueTable, { IssueQuery, columnNames } from "./IssueTable";
 
@@ -55,5 +56,10 @@ const IssuesPage = async ({ searchParams }: Props) => {
 //Forçando o next a buildar o arquivo como dinâmico ao
 //invés de estático, o que faz a informação ser mostrada
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Issue Tracker - Lista",
+  description: "Veja todas as issues dos projetos",
+};
 
 export default IssuesPage;
