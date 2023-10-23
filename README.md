@@ -1,5 +1,5 @@
-## Issue Tracker
-# Uma aplicação para cadastrar Issues feita em:
+# Issue Tracker
+## Uma aplicação para cadastrar Issues feita em:
 - Next.js
 - Prisma
 - MySQL
