@@ -3,6 +3,7 @@
 
 Crie, edite, delete e veja issues através de um dashboard com um gráfico e uma lista das últimas issues!
 
+
 ![image](https://github.com/mwilsonoliveira/issue-tracker/assets/10607918/6ea16435-6367-4ae8-85c5-33263ea7a1e3)
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge)
